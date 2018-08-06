@@ -1,0 +1,13 @@
+#!/bin/bash
+
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+if pgrep -f "python3 $DIR/faqueue.py" &>/dev/null; then
+    printf "FAQueue is already running!\n"
+else
+    printf "Starting FAQueue in the background.\n"
+    cd $DIR
+    . "$DIR/venv/bin/activate"
+    nohup $DIR/faqueue.py >/dev/null 2>&1 &
+    deactivate
+fi

@@ -1,0 +1,68 @@
+<Index_Source>,<Indicator_Type_Name>,<Table_Field_List>
+index=bit9,Windows - FileName,_time Indicator Indicator_Type ObjectID HostName HostIP FileName PathName ProcessFileName FileHash ProcessFileName ProcessPathName ProcessHash SourceFileName SourcePathName RootName UserName Policy Sha1 Md5
+index=bit9,Windows - FilePath,_time Indicator Indicator_Type ObjectID HostName HostIP FileName PathName ProcessFileName FileHash ProcessFileName ProcessPathName ProcessHash SourceFileName SourcePathName RootName UserName Policy Sha1 Md5
+index=bit9,Account,_time Indicator Indicator_Type ObjectID HostName HostIP FileName PathName ProcessFileName FileHash ProcessFileName ProcessPathName ProcessHash SourceFileName SourcePathName RootName UserName Policy Sha1 Md5
+index=bit9,Hash - MD5,_time Indicator Indicator_Type ObjectID HostName HostIP FileName PathName ProcessFileName FileHash ProcessFileName ProcessPathName ProcessHash SourceFileName SourcePathName RootName UserName Policy Sha1 Md5
+index=bit9,Hash - SHA1,_time Indicator Indicator_Type ObjectID HostName HostIP FileName PathName ProcessFileName FileHash ProcessFileName ProcessPathName ProcessHash SourceFileName SourcePathName RootName UserName Policy Sha1 Md5
+index=bit9,Hash - SHA256,_time Indicator Indicator_Type ObjectID HostName HostIP FileName PathName ProcessFileName FileHash ProcessFileName ProcessPathName ProcessHash SourceFileName SourcePathName RootName UserName Policy Sha1 Md5
+index=bluecoat,URI - URL,_time Indicator Indicator_Type ObjectID URI filter_result username uri_host uri_path uri_port http_method uri_scheme categories http_user_agent http_content_type exception_id http_referrer
+index=bluecoat,URI - Path,_time Indicator Indicator_Type ObjectID URI filter_result username uri_host uri_path uri_port http_method uri_scheme categories http_user_agent http_content_type exception_id http_referrer
+index=bluecoat,URI - Domain Name,_time Indicator Indicator_Type ObjectID URI filter_result username uri_host uri_path uri_port http_method uri_scheme categories http_user_agent http_content_type exception_id http_referrer
+index=bluecoat,Address - ipv4-addr,_time Indicator Indicator_Type ObjectID URI filter_result username uri_host uri_path uri_port http_method uri_scheme categories http_user_agent http_content_type exception_id http_referrer
+index=bluecoat,URI - HTTP - UserAgent,_time Indicator Indicator_Type ObjectID URI filter_result username uri_host uri_path uri_port http_method uri_scheme categories http_user_agent http_content_type exception_id http_referrer
+index=bro sourcetype=bro_dns,Address - ipv4-addr,_time url answers src_ip src_host src_port dest_host dest_ip dest_port query
+index=bro sourcetype=bro_dns,URI - Domain Name,_time url answers src_ip src_host src_port dest_host dest_ip dest_port query
+index=bro sourcetype=bro_files,Hash - MD5,_time Indicator Indicator_Type ObjectID md5 extracted_source filename mime_type tx_hosts rx_hosts sha1
+index=bro sourcetype=bro_files,Hash - SHA1,_time Indicator Indicator_Type ObjectID sha1 extracted_source filename mime_type tx_hosts rx_hosts md5
+index=email_*,Email - Address,_time mail_from mail_to_mv subject path first_received message_id reply_to user_agent originating_ip
+index=email_*,Email - Subject,_time mail_from mail_to_mv subject path first_received message_id reply_to user_agent originating_ip
+index=email_*,Address - ipv4-addr,_time mail_from mail_to_mv subject path first_received message_id reply_to user_agent extracted_urls extracted_urls_mv url originating_ip
+index=email_*,URI - Domain Name,_time mail_from mail_to_mv subject path first_received message_id reply_to user_agent extracted_urls extracted_urls_mv fqdn url originating_ip
+index=email_*,Email - Xmailer,_time mail_from mail_to_mv subject path first_received message_id reply_to user_agent x_mailer originating_ip
+index=email_*,URI - Path,_time mail_from mail_to_mv subject path first_received message_id reply_to user_agent extracted_urls extracted_urls_mv url originating_ip
+index=email_*,URI - URL,_time mail_from mail_to_mv subject path first_received message_id reply_to user_agent extracted_urls extracted_urls_mv url originating_ip
+index=email_*,Email - X-Originating IP,_time mail_from mail_to_mv subject path first_received message_id reply_to user_agent originating_ip
+index=email_*,Windows - FileName,_time mail_from mail_to_mv subject path first_received attachment_names_mv message_id reply_to user_agent extracted_urls extracted_urls_mv url originating_ip
+index=carbonblack,Account,"_time src src_port transport dest dest_ip dest_port direction domain event_type computer_name action sensor_id user docs{}.group docs{}.os_type docs{}.username severity subject watchlist_name ioc_type report_score docs{}.company_name doc{}.legal_copyright
+"
+index=carbonblack,Address - ipv4-addr,"_time src src_port transport dest dest_ip dest_port direction domain event_type computer_name action sensor_id user docs{}.group docs{}.os_type docs{}.username severity subject watchlist_name ioc_type report_score docs{}.company_name doc{}.legal_copyright
+"
+index=carbonblack,Hash - MD5,"_time src src_port transport dest dest_ip dest_port direction domain event_type computer_name action sensor_id user docs{}.group docs{}.os_type docs{}.username severity subject watchlist_name ioc_type report_score docs{}.company_name doc{}.legal_copyright
+"
+index=carbonblack,URI - Domain Name,"_time src src_port transport dest dest_ip dest_port direction domain event_type computer_name action sensor_id user docs{}.group docs{}.os_type docs{}.username severity subject watchlist_name ioc_type report_score docs{}.company_name doc{}.legal_copyright
+"
+index=carbonblack,Windows - FileName,"_time src src_port transport dest dest_ip dest_port direction domain event_type computer_name action sensor_id user docs{}.group docs{}.os_type docs{}.username severity subject watchlist_name ioc_type report_score docs{}.company_name doc{}.legal_copyright
+"
+index=carbonblack,Windows - FilePath,"_time src src_port transport dest dest_ip dest_port direction domain event_type computer_name action sensor_id user docs{}.group docs{}.os_type docs{}.username severity subject watchlist_name ioc_type report_score docs{}.company_name doc{}.legal_copyright
+"
+index=carbonblack,Windows - Registry,"_time src src_port transport dest dest_ip dest_port direction domain event_type computer_name action sensor_id user docs{}.group docs{}.os_type docs{}.username severity subject watchlist_name ioc_type report_score docs{}.company_name doc{}.legal_copyright
+"
+index=carbonblack,Windows - Shell,"_time src src_port transport dest dest_ip dest_port direction domain event_type computer_name action sensor_id user docs{}.group docs{}.os_type docs{}.username severity subject watchlist_name ioc_type report_score docs{}.company_name doc{}.legal_copyright
+"
+index=dlp_logs,Windows - FileName,_time Indicator Indicator_Type ObjectID FullPath Application_Directory Application_Full_Name  User_Name Computer_Name Custom_Computer_Group MD5_Checksum Was_Terminal_Session Destination_File
+index=dlp_logs,Windows - FilePath,_time Indicator Indicator_Type ObjectID FullPath Application_Directory Application_Full_Name  User_Name Computer_Name Custom_Computer_Group MD5_Checksum Was_Terminal_Session Destination_File
+index=dlp_logs,Hash - MD5,_time Indicator Indicator_Type ObjectID Application_Full_Name Application_Directory User_Name MD5_Checksum Source_File
+index=dlp_logs,Email - Subject,_time Indicator Indicator_Type ObjectID Application_Full_Name Application_Directory User_Name MD5_Checksum Email_Subject DNS_Hostname
+index=dlp_logs,URI - Domain Name,_time Indicator Indicator_Type ObjectID Application_Full_Name Application_Directory User_Name MD5_Checksum Email_Subject DNS_Hostname
+index=dns_logs,URI - Domain Name,_time domain src_ip host
+index=duo,Address - ipv4-addr,_time username result ip newenrollment factor sourcetype
+index=duo ,Account,_time username count
+index=fortinet,Address - ipv4-addr,_time status srcip srcport dstip dstport filename service subtype eventtype profiletype profile msg srcinf dstinf url hostname
+index=pan_logs,IDS - Streetname,_time src_ip threat_name dst_ip dst_port
+index=pan_logs,Address - ipv4-addr,_time src_ip threat_name dst_ip dst_port
+index=radius,Account,_time Indicator Indicator_Type ObjectID User_Name Framed_IP_Address process Protocol Service_Type AuthenticationIdentityStore AuthenticationMethod Authentication_PolicyMatchedRule
+index=radius,Address - ipv4-addr,_time Indicator Indicator_Type ObjectID User_Name Calling_Station_ID Framed_IP_Address process Protocol Service_Type AuthenticationIdentityStore AuthenticationMethod Authentication_PolicyMatchedRule
+index=snort,IDS - Streetname,_time src_ip src_port dest_ip dest_port signature name Seq Ack
+index=snort,Address - ipv4-addr,_time src_ip src_port dest_ip dest_port signature name Seq Ack
+index=symantec or index=av_logs,Antivirus - Streetname,_time Indicator Indicator_Type ObjectID action actual_action agt_info application confidence dest_ip dest_nt_host downloaded_by file_name file_path first_seen hash_value prevalence process signature sourcetype src_ip src_ip_host user web_domain
+index=symantec or index=av_logs,Windows - FileName,_time Indicator Indicator_Type ObjectID action actual_action agt_info application confidence dest_ip dest_nt_host downloaded_by file_name file_path first_seen hash_value prevalence process signature sourcetype src_ip src_ip_host user web_domain
+index=symantec or index=av_logs,Windows - FilePath,_time Indicator Indicator_Type ObjectID action actual_action agt_info application confidence dest_ip dest_nt_host downloaded_by file_name file_path first_seen hash_value prevalence process signature sourcetype src_ip src_ip_host user web_domain
+index=symantec or index=av_logs,Windows - FilePath,_time Indicator Indicator_Type ObjectID action actual_action agt_info application confidence dest_ip dest_nt_host downloaded_by file_name file_path first_seen hash_value prevalence process signature sourcetype src_ip src_ip_host user web_domain
+index=symantec or index=av_logs,Windows - FileName,_time Indicator Indicator_Type ObjectID action actual_action agt_info application confidence dest_ip dest_nt_host downloaded_by file_name file_path first_seen hash_value prevalence process signature sourcetype src_ip src_ip_host user web_domain
+index=symantec or index=av_logs,URI - Domain Name,_time Indicator Indicator_Type ObjectID action actual_action agt_info application confidence dest_ip dest_nt_host downloaded_by file_name file_path first_seen hash_value prevalence process signature sourcetype src_ip src_ip_host user web_domain
+index=symantec or index=av_logs,Hash - SHA2,_time Indicator Indicator_Type ObjectID action actual_action agt_info application confidence dest_ip dest_nt_host downloaded_by file_name file_path first_seen hash_value prevalence process signature sourcetype src_ip src_ip_host user web_domain
+index=symantec or index=av_logs,Hash - SHA1,_time Indicator Indicator_Type ObjectID action actual_action agt_info application confidence dest_ip dest_nt_host downloaded_by file_name file_path first_seen hash_value prevalence process signature sourcetype src_ip src_ip_host user web_domain
+index=symantec or index=av_logs,Windows - FileName,_time Indicator Indicator_Type ObjectID action actual_action agt_info application confidence dest_ip dest_nt_host downloaded_by file_name file_path first_seen hash_value prevalence process signature sourcetype src_ip src_ip_host user web_domain
+index=symantec or index=av_logs,Windows - FilePath,_time Indicator Indicator_Type ObjectID action actual_action agt_info application confidence dest_ip dest_nt_host downloaded_by file_name file_path first_seen hash_value prevalence process signature sourcetype src_ip src_ip_host user web_domain
+index=symantec or index=av_logs (sourcetype=sep12:proactive OR sourcetype=sep12:risk OR sourcetype=sep12:ids),VIOC_CIDR,_time Indicator Indicator_Type ObjectID action actual_action agt_info application confidence dest_ip dest_nt_host downloaded_by file_name file_path first_seen hash_value prevalence process signature sourcetype src_ip src_ip_host user web_domain
+index=winlogs or index=win_logs,Windows - Service,ComputerName Account_Name Service_Name Service_File_Name Message EventCode EventType

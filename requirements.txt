@@ -1,0 +1,4 @@
+pymongo
+ssdeep
+requests
+yara-python
